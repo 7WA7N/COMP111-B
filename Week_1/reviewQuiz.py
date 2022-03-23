@@ -4,6 +4,7 @@
 # so n = m*i for some integer i and 
 # False otherwise. 
 
+
 def isMultiple(n,m):
     if n % m == 0:
         return print(True)
@@ -12,5 +13,3 @@ def isMultiple(n,m):
 
 
 isMultiple(8,2) 
-
-
