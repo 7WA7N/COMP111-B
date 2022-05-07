@@ -1,6 +1,7 @@
-# Muhammad Ali Awan
-# 231-522965
-# Lab 3 
+# Muhammad Ali Awan 
+# 231522965
+# COMP111 - B 
+# Lab 3
 
 # Question 1 
 def BinomialCoefficient(n,k):

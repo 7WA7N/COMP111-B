@@ -1,8 +1,7 @@
+# Muhammad Ali Awan 
 # 231522965
-# Muhammad Ali Awan
-# COMP-111-B
-
-# Lab 2 
+# COMP111 - B 
+# Lab 2
 
 
 #! Question 1 
