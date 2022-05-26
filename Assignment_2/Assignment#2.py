@@ -64,13 +64,38 @@ class Player():
         print("Matches:",self.Matches)
     
     @abstractmethod
-    def PlayerType():
+    def PlayerType(self,playerType):
+        self.PlayerType = 'Batsman' or 'Bowler'
+        return self.PlayerType 
 
 class Batsman(Player):
-    pass
+    def __init__(self,Name,Matches):
+        super().__init__(Name,Matches)
+        for i in Matches:
+            self.PerMatchScore = []
+            self.PerMatchScore = int(input(f"Enter the score of the match {i}:"))
+            self.TotalScore += self.PerMatchScore
+            
+        self.Average = self.Average
+
+    def CalculateAverage(self):
+        self.Average = self.TotalScore/len(self.PerMatchScore)
+        return self.Average
 
 class Bowler(Player):
-    pass
+    
+    def __init__(self,Name,Matches):
+        super().__init__(Name,Matches)
+        for i in Matches:
+            self.PerMatchWickets = []
+            self.PerMatchWickets = int(input(f"Enter the wickets taken in match {i}:"))
+            self.NoOfWickets += self.NoOfWickets
+            
+        self.Average = self.Average
+    
+    def CalculateAverage(self):
+        self.Average = self.TotalScore/len(self.PerMatchScore)
+        return self.Average
 
     
  
