@@ -55,7 +55,7 @@ class Bus(Vehicle):
 # Task 2
 from abc import ABC, abstractmethod
 
-class Player():
+class Player(ABC):
     def __init__(self,Name,Matches):
         self.Name = Name
         self.Matches = Matches
@@ -121,10 +121,30 @@ class Bowler(Player):
       self.PlayerType = 'Bowler'
       return print(self.PlayerType)
 
-      
-      
+# Task 3 
 
+class CarbonFootprint(ABC):
+  def __init__(self):
+    self.ElectricityEmissionFactor = 1.37
+    self.C02Emissions = C02Emissions 
+    self.PricePerKWH = 8.00
+    self.PricePerThousandCubicFeetAvg = 3.00
+    self.NaturalGasEmissionFactor = 120.61
+    
+  pass
       
+class Building(CarbonFootprint):
+  def __init__(self,Bill):
+    self.ElectricityUsage = self.ElectricityUsage
+    
+
+class Car(CarbonFootprint):
+  pass
+
+class Bicycle(CarbonFootprint):
+  pass
+
+
 
     
  
